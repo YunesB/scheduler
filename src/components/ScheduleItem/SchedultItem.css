@@ -1,0 +1,47 @@
+.schedule__container {
+  position: relative;
+  height: 15px;
+  width: 15px;
+}
+
+.schedule__button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  transition: 0.3s;
+  background-color: #da635d;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.schedule__button:hover {
+  opacity: 0.7;
+}
+
+.popover {
+  position: absolute;
+  background-color: black;
+  padding: 5px;
+  position: absolute;
+  top: calc(100% + 5px);
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.popover__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.popover__list-item {
+  height: 15px;
+  width: 15px;
+  margin: 0;
+}

@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.page {
+  color: #dcd0c0;
+  font-family: "Roboto Condensed", sans-serif;
+  max-width: 1200px;
+  margin: 25px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page__button-container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.page__button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 15px;
+  background-color: #4e4e56;
+  color: #dcd0c0;
+  margin-bottom: 35px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page__button:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.calendar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 30px;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  background-color: #4e4e56;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 120px;
+  padding: 15px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.day__date {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.schedule {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.schedule__item:hover {
+  opacity: 0.7;
 }
